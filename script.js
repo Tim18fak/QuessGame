@@ -39,6 +39,7 @@ document.querySelector('.btn:nth-child(2)').addEventListener('click',function(){
   document.querySelector('body').style.backgroundColor = 'green'
   document.querySelector('.highscore').textContent = highscore.textContent > score.textContent ? highscore.textContent : score.textContent
   document.querySelectojr('.message').textContent = 'You won'
+  BUG  CORRECTED
   document.querySelector('.number').textContent = random
   document.querySelector('.check').style.display = 'none'
   console.log(document.querySelector('.check').disabled)
