@@ -38,8 +38,8 @@ document.querySelector('.btn:nth-child(2)').addEventListener('click',function(){
  if(input === random){
   document.querySelector('body').style.backgroundColor = 'green'
   document.querySelector('.highscore').textContent = highscore.textContent > score.textContent ? highscore.textContent : score.textContent
-  document.querySelector('.message').textContent = 'You won'
-  document.querySelector('.number').textContent = 10
+  document.querySelectojr('.message').textContent = 'You won'
+  document.querySelector('.number').textContent = random
   document.querySelector('.check').style.display = 'none'
   console.log(document.querySelector('.check').disabled)
   quessInput.style.display = 'none'
