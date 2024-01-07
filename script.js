@@ -16,6 +16,9 @@ const highscore =  document.querySelector('.highscore')
 const misteryNum =  document.querySelector('.number')
 const quessInput = document.querySelector('.guess')
 
+quessInput.addEventListener('change',function(){
+  console.log(quessInput.value)
+})
 
 document.querySelector('.btn').addEventListener('click',function() {
   random = Math.floor(Math.random() * 20) + 1
@@ -38,8 +41,8 @@ document.querySelector('.btn:nth-child(2)').addEventListener('click',function(){
  if(input === random){
   document.querySelector('body').style.backgroundColor = 'green'
   document.querySelector('.highscore').textContent = highscore.textContent > score.textContent ? highscore.textContent : score.textContent
-  document.querySelectojr('.message').textContent = 'You won'
-  BUG  CORRECTED
+  document.querySelector('.message').textContent = 'You won'
+  // BUG  CORRECTED
   document.querySelector('.number').textContent = random
   document.querySelector('.check').style.display = 'none'
   console.log(document.querySelector('.check').disabled)
