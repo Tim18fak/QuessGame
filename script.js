@@ -15,11 +15,14 @@ const score = document.querySelector('.score')
 const highscore =  document.querySelector('.highscore')
 const misteryNum =  document.querySelector('.number')
 const quessInput = document.querySelector('.guess')
+//  this listens for when the user changes the input , use this rather than the change event
 
-quessInput.addEventListener('change',function(){
+quessInput.addEventListener('input',function(){
   console.log(quessInput.value)
 })
-
+quessInput.addEventListener('blur',()=> {
+  quessInput.focus()
+})
 document.querySelector('.btn').addEventListener('click',function() {
   random = Math.floor(Math.random() * 20) + 1
   document.querySelector('body').style.backgroundColor = ''
